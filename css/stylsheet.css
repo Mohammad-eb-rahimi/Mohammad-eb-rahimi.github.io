@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Aviny;
+    src: url('./Font/Aviny2.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Dima;
+    src: url('./Font/Dima2.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    direction: rtl;
+    background: url('../Photo/Home.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+#phme{
+    width: 200px;
+    position: absolute;
+    right: 550px;
+    top: 200px;
+    border-radius: 15px;
+    border: 10px solid;
+    border-color: rgba(8, 8, 8, 0.7);
+    border-width: 5px 250px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    background-color: rgba(44, 44, 44, 0.7);
+}
+#name{
+    position: absolute;
+    right: 790px;
+    top: 300px;
+    font-family: Tahoma;
+    font-size: x-large;
+    color: whitesmoke;
+}
+nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0,0.7);
+    height: 100%;
+    padding: 40px;
+}
+ul{
+    padding-top: 120px;
+    padding-right: 50px;
+    font-family: 'Segoe UI';
+}
+nav li{
+    list-style-type: none;
+    text-align: center;
+}
+nav li a{
+    font-size: large;
+    text-decoration: none;
+    color: rgb(246, 246, 244);
+    line-height: 70px;
+}
+nav #logo{
+    width: 200px;
+    position: fixed;
+    top: 30px;
+    right: 15px;
+}
+#ichome, #icuser, #icfile, #icbars{
+    position: fixed;
+    right: 25px;
+    margin: 19px;
+    color: darkgray;
+    font-size: 35px;
+}
+#icmobile{
+    position: fixed;
+    right: 36px;
+    margin: 10px;
+    color: darkgray;
+    font-size: 50px;
+}
+#socialnet{
+    background-color: rgb(187, 187, 187);
+    border-radius: 100%;
+    width: 65px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+#socialnetwork{
+    background-color: rgb(187, 187, 187);
+    border-radius: 100%;
+    width: 65px;
+}
+@media screen and (max-width: 480px){
+    nav{
+        padding: 5px;
+    }
+    #ichome, #icuser, #icfile, #icbars, #icmobile{
+        display: none;
+    }
+    #phme{
+        width: 150px;
+        position: absolute;
+        right: 200px;
+        top: 220px;
+        border-left-width: 5px;
+        border-bottom-width: 50px;
+    }
+    ul{
+        padding-right: 0px;
+    }
+    #name{
+        position:absolute;
+        right: 218px;
+        top: 375px;
+        font-size: medium;
+    }
+    nav #logo{
+        width: 125px;
+        right: 8px;
+    }
+    nav li a{
+        font-size: medium;
+    }
+    #socialnet{
+        width: 50px;
+    }
+    #socialnetwork{
+    width: 50px;
+}
+@media screen and (min-width: 720px){
+    #phme{
+        position: absolute;
+        right: 100px;
+    }
+}
+@media screen and (min-width: 960px){
+    
+}
+    
+    
+}
+@media screen and (min-width: 1140px) {
+    
+}
+#menu_items{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: right;
+}
+#menu_items span{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: whitesmoke;
+}
+#menu_items i{
+    /* position: fixed; */
+    /* right: 25px; */
+    margin: 15px;
+    font-size: 35px;
+    color: blueviolet;
+}
